@@ -7,13 +7,11 @@ class ApplicationController
   attr_accessor :statusBarMenu
   
   def applicationDidFinishLaunching(notification)
-    NSLog("we are launched")
     activateStatusMenu
     @distributor = WindowDistributor.new
   end
   
   def distributeWindows(sender)
-    NSLog("will distribute windows")
     @distributor.run
   end
   

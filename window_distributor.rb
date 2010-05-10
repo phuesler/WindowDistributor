@@ -9,7 +9,6 @@ class WindowDistributor
   ACTIONS_CODE = 'actT'.unpack('N').first
   
   def initialize
-    NSLog("go")
     @screen = NSScreen.mainScreen.frame
     @screen_height = @screen.size.height
     @screen_width = @screen.size.width
@@ -18,18 +17,20 @@ class WindowDistributor
   
   def run
     process = @system_events.applicationProcesses.find {|p| p.frontmost}
-    # process = @system_events.applicationProcesses.find {|a| a.name.downcase == 'finder'}
-    number_of_windows = process.windows.size
-    counter = 1
+    @calculator = DistributionCalculator.new(number_of_windows: process.windows.size,
+                                             max_height: @screen_height,
+                                             max_width: @screen_width)
+    index = 0
     process.windows.each do |target|
-      origin = target.propertyWithCode(POSITION_CODE)
-      size   = target.propertyWithCode(SIZE_CODE)
-      x = counter *  (@screen_width / 2) - (@screen_width / 2)
-      origin.setTo([x ,0])
-      size.setTo([@screen_width / 2,@screen_height])
-      counter = counter + 1
+      positionWindow(target,index)
+      index = index + 1
     end
   end
+  
+  def positionWindow(target, index)
+    origin = target.propertyWithCode(POSITION_CODE)
+    size   = target.propertyWithCode(SIZE_CODE)
+    origin.setTo(@calculator.position(index))
+    size.setTo(@calculator.size)
+  end
 end
-
-
