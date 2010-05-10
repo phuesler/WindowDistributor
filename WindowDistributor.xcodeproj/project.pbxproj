@@ -65,6 +65,8 @@
 		0368366211988D7400F73828 /* statusbaricon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0368366111988D7400F73828 /* statusbaricon.png */; };
 		036836801198902C00F73828 /* diskimage_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0368367F1198902C00F73828 /* diskimage_bg.png */; };
 		03683691119891D400F73828 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 03683690119891D400F73828 /* dsa_pub.pem */; };
+		036836931198926C00F73828 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036836921198926C00F73828 /* Sparkle.framework */; };
+		0368369C1198927500F73828 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 036836921198926C00F73828 /* Sparkle.framework */; };
 		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
@@ -97,6 +99,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0368369C1198927500F73828 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +117,7 @@
 		0368366111988D7400F73828 /* statusbaricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusbaricon.png; sourceTree = "<group>"; };
 		0368367F1198902C00F73828 /* diskimage_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diskimage_bg.png; sourceTree = "<group>"; };
 		03683690119891D400F73828 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		036836921198926C00F73828 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -138,6 +142,7 @@
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
 				03683569119856CA00F73828 /* ScriptingBridge.framework in Frameworks */,
 				036836171198809700F73828 /* Carbon.framework in Frameworks */,
+				036836931198926C00F73828 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +179,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				036836921198926C00F73828 /* Sparkle.framework */,
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				03683568119856CA00F73828 /* ScriptingBridge.framework */,
@@ -496,6 +502,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -517,6 +524,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
