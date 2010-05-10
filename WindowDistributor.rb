@@ -17,8 +17,8 @@ class WindowDistributor
   end
   
   def run
-    # process = @system_events.applicationProcesses.find {|p| p.frontmost}
-    process = @system_events.applicationProcesses.find {|a| a.name.downcase == 'finder'}
+    process = @system_events.applicationProcesses.find {|p| p.frontmost}
+    # process = @system_events.applicationProcesses.find {|a| a.name.downcase == 'finder'}
     number_of_windows = process.windows.size
     counter = 1
     process.windows.each do |target|
