@@ -16,12 +16,13 @@ class WindowDistributor
   end
   
   def run
-    process = @system_events.applicationProcesses.find {|p| p.frontmost}
-    @calculator = DistributionCalculator.new(number_of_windows: process.windows.size,
+    process = @system_events.applicationProcesses.find {|a| a.frontmost }
+    windows = process.windows.select{|w| w.properties["subrole"] == "AXStandardWindow"}
+    @calculator = DistributionCalculator.new(number_of_windows: windows.size,
                                              max_height: @screen_height,
                                              max_width: @screen_width)
     index = 0
-    process.windows.each do |target|
+    windows.each do |target|
       positionWindow(target,index)
       index = index + 1
     end
