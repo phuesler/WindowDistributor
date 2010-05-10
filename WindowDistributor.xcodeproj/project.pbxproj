@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		03683681119890DF00F73828 /* Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0368368F1198910500F73828 /* Build configuration list for PBXAggregateTarget "Release" */;
+			buildPhases = (
+			);
+			dependencies = (
+				03683685119890E600F73828 /* PBXTargetDependency */,
+				03683687119890EA00F73828 /* PBXTargetDependency */,
+			);
+			name = Release;
+			productName = Release;
+		};
 		172754BD107597F200D0347B /* Unit Tests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */;
@@ -51,6 +63,8 @@
 		03683622119880D900F73828 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03683621119880D900F73828 /* DDHotKeyCenter.m */; };
 		0368366011988D6A00F73828 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0368365F11988D6A00F73828 /* icon.icns */; };
 		0368366211988D7400F73828 /* statusbaricon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0368366111988D7400F73828 /* statusbaricon.png */; };
+		036836801198902C00F73828 /* diskimage_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0368367F1198902C00F73828 /* diskimage_bg.png */; };
+		03683691119891D400F73828 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 03683690119891D400F73828 /* dsa_pub.pem */; };
 		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
@@ -58,6 +72,23 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03683684119890E600F73828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* WindowDistributor */;
+			remoteInfo = WindowDistributor;
+		};
+		03683686119890EA00F73828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1A51A510A4FF640046A98A /* Embed */;
+			remoteInfo = Embed;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		172754B4107597CF00D0347B /* CopyFiles */ = {
@@ -81,6 +112,8 @@
 		03683621119880D900F73828 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
 		0368365F11988D6A00F73828 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		0368366111988D7400F73828 /* statusbaricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusbaricon.png; sourceTree = "<group>"; };
+		0368367F1198902C00F73828 /* diskimage_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diskimage_bg.png; sourceTree = "<group>"; };
+		03683690119891D400F73828 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -202,6 +235,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03683690119891D400F73828 /* dsa_pub.pem */,
+				0368367F1198902C00F73828 /* diskimage_bg.png */,
 				0368366111988D7400F73828 /* statusbaricon.png */,
 				0368365F11988D6A00F73828 /* icon.icns */,
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
@@ -258,6 +293,7 @@
 				172754BD107597F200D0347B /* Unit Tests */,
 				4D1A51A110A4FF5D0046A98A /* Compile */,
 				4D1A51A510A4FF640046A98A /* Embed */,
+				03683681119890DF00F73828 /* Release */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +311,8 @@
 				036835D411986A4100F73828 /* distribution_calculator.rb in Resources */,
 				0368366011988D6A00F73828 /* icon.icns in Resources */,
 				0368366211988D7400F73828 /* statusbaricon.png in Resources */,
+				036836801198902C00F73828 /* diskimage_bg.png in Resources */,
+				03683691119891D400F73828 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +372,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		03683685119890E600F73828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* WindowDistributor */;
+			targetProxy = 03683684119890E600F73828 /* PBXContainerItemProxy */;
+		};
+		03683687119890EA00F73828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1A51A510A4FF640046A98A /* Embed */;
+			targetProxy = 03683686119890EA00F73828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -354,6 +405,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		03683682119890DF00F73828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Release;
+			};
+			name = Debug;
+		};
+		03683683119890DF00F73828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Release;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		172754BE107597F200D0347B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -482,6 +554,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0368368F1198910500F73828 /* Build configuration list for PBXAggregateTarget "Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03683682119890DF00F73828 /* Debug */,
+				03683683119890DF00F73828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
