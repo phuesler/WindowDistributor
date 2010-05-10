@@ -47,6 +47,8 @@
 		03683569119856CA00F73828 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03683568119856CA00F73828 /* ScriptingBridge.framework */; };
 		0368356D1198571900F73828 /* window_distributor.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0368356C1198571900F73828 /* window_distributor.rb */; };
 		036835D411986A4100F73828 /* distribution_calculator.rb in Resources */ = {isa = PBXBuildFile; fileRef = 036835D311986A4100F73828 /* distribution_calculator.rb */; };
+		036836171198809700F73828 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036836161198809700F73828 /* Carbon.framework */; };
+		03683622119880D900F73828 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03683621119880D900F73828 /* DDHotKeyCenter.m */; };
 		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
@@ -72,6 +74,9 @@
 		03683568119856CA00F73828 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		0368356C1198571900F73828 /* window_distributor.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = window_distributor.rb; sourceTree = "<group>"; };
 		036835D311986A4100F73828 /* distribution_calculator.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = distribution_calculator.rb; sourceTree = "<group>"; };
+		036836161198809700F73828 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		03683620119880D900F73828 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		03683621119880D900F73828 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -95,12 +100,30 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
 				03683569119856CA00F73828 /* ScriptingBridge.framework in Frameworks */,
+				036836171198809700F73828 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0368361D119880A600F73828 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0368361E119880B600F73828 /* HotKey */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		0368361E119880B600F73828 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				03683620119880D900F73828 /* DDHotKeyCenter.h */,
+				03683621119880D900F73828 /* DDHotKeyCenter.m */,
+			);
+			name = HotKey;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +140,7 @@
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				03683568119856CA00F73828 /* ScriptingBridge.framework */,
+				036836161198809700F73828 /* Carbon.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -157,6 +181,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				0368361D119880A600F73828 /* Vendor */,
 			);
 			name = WindowDistributor;
 			sourceTree = "<group>";
@@ -295,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				03683622119880D900F73828 /* DDHotKeyCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
