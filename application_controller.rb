@@ -28,16 +28,15 @@ class ApplicationController
   
   def activateStatusMenu
     statusBarItem = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength)
-    statusBarItem.setToolTip("RedistributeWindows")
-    statusBarItem.title = "Distribute"
+    statusBarItem.setToolTip("Distribute Windows")
     statusBarItem.setHighlightMode(true)
     statusBarItem.setEnabled(true)
     
-    # statusImage = NSImage.alloc.initWithContentsOfFile(
-    #                               NSBundle.mainBundle.pathForResource("network", ofType: "png")
-    #                               )
-    # statusBarItem.setImage(statusImage)
-    # statusBarItem.setAlternateImage(statusImage)
+    statusImage = NSImage.alloc.initWithContentsOfFile(
+                                  NSBundle.mainBundle.pathForResource("statusbaricon", ofType: "png")
+                                  )
+    statusBarItem.setImage(statusImage)
+    statusBarItem.setAlternateImage(statusImage)
     statusBarItem.setMenu(statusBarMenu)
   end
 end

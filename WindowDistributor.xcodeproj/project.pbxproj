@@ -49,6 +49,8 @@
 		036835D411986A4100F73828 /* distribution_calculator.rb in Resources */ = {isa = PBXBuildFile; fileRef = 036835D311986A4100F73828 /* distribution_calculator.rb */; };
 		036836171198809700F73828 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036836161198809700F73828 /* Carbon.framework */; };
 		03683622119880D900F73828 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03683621119880D900F73828 /* DDHotKeyCenter.m */; };
+		0368366011988D6A00F73828 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0368365F11988D6A00F73828 /* icon.icns */; };
+		0368366211988D7400F73828 /* statusbaricon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0368366111988D7400F73828 /* statusbaricon.png */; };
 		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
@@ -77,6 +79,8 @@
 		036836161198809700F73828 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		03683620119880D900F73828 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
 		03683621119880D900F73828 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		0368365F11988D6A00F73828 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		0368366111988D7400F73828 /* statusbaricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusbaricon.png; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -198,6 +202,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0368366111988D7400F73828 /* statusbaricon.png */,
+				0368365F11988D6A00F73828 /* icon.icns */,
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -267,6 +273,8 @@
 				03683559119855E800F73828 /* application_controller.rb in Resources */,
 				0368356D1198571900F73828 /* window_distributor.rb in Resources */,
 				036835D411986A4100F73828 /* distribution_calculator.rb in Resources */,
+				0368366011988D6A00F73828 /* icon.icns in Resources */,
+				0368366211988D7400F73828 /* statusbaricon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
