@@ -4,13 +4,13 @@ require "rake"
 require "choctop"
 require 'highline/import'
 
-class ChocTop
+class ChocTop::Configuration
   def user
     @user ||= ask("User for server please: ")
   end
 end
 
-ChocTop.new do |s|
+ChocTop::Configuration.new do |s|
   # Remote upload target (set host if not same as Info.plist['SUFeedURL'])
   s.remote_dir = '/home/mosphere/www/applications.huesler-informatik.ch/downloads/WindowDistributor'
   s.build_target = 'Release'
