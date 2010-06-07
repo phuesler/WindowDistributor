@@ -1,5 +1,5 @@
-h1. <span>2010-05-10</span> Release 0.1.1
+h1. <span>2010-05-07</span> Release 0.2.0
 
 h2. Bug fix
 
-Only reposition standard windows. Don't consider palettes, dialog etc.
+* Works when changing screen resolutions
