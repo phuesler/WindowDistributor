@@ -10,8 +10,6 @@ class WindowDistributor
   
   def initialize
     @screen = NSScreen.mainScreen.frame
-    @screen_height = @screen.size.height
-    @screen_width = @screen.size.width
     @system_events = SBApplication.applicationWithBundleIdentifier("com.apple.SystemEvents")
   end
   
@@ -19,8 +17,8 @@ class WindowDistributor
     process = @system_events.applicationProcesses.find {|a| a.frontmost }
     windows = process.windows.select{|w| w.properties["subrole"] == "AXStandardWindow"}
     @calculator = DistributionCalculator.new(number_of_windows: windows.size,
-                                             max_height: @screen_height,
-                                             max_width: @screen_width)
+                                             max_height: @screen.size.height,
+                                             max_width: @screen.szie.width)
     index = 0
     windows.each do |target|
       positionWindow(target,index)
